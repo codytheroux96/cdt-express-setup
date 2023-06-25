@@ -1,4 +1,4 @@
-const fs = require('fs');
+import { writeFileSync, mkdirSync, mkdir } from 'fs';
 const controllerPath = ('./controllers');
 const modelPath = ('./models');
 const viewPath = ('./views');
@@ -41,7 +41,7 @@ sequelize.sync({ force: false }).then(() => {
 })
 `
 
-fs.writeFileSync('server.js', skeletonCreation);
-fs.mkdirSync(controllerPath);
-fs.mkdirSync(modelPath);
-fs.mkdir(viewPath);
+writeFileSync('server.js', skeletonCreation);
+mkdirSync(controllerPath);
+mkdirSync(modelPath);
+mkdir(viewPath);
