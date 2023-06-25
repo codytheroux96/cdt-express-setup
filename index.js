@@ -38,6 +38,9 @@ sequelize.sync({ force: false }).then(() => {
         console.log();
     })
 })
+next();
+
+module.exports = createTemplate;
 }`
 
 fs.writeFileSync('server.js', skeletonCreationFunction);
