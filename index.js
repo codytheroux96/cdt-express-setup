@@ -1,4 +1,7 @@
 const fs = require('fs');
+const controllerPath = ('./controllers');
+const modelPath = ('./models');
+const viewPath = ('./views');
 
 const skeletonCreationFunction = `
 function createTemplate(req, res, next)
@@ -44,8 +47,9 @@ module.exports = createTemplate;
 }`
 
 fs.writeFileSync('server.js', skeletonCreationFunction);
-fs.mkdir('configs')
-fs.mkdir('controllers')
+fs.mkdirSync(controllerPath);
+fs.mkdirSync(modelPath);
+fs.mkdir(viewPath);
 
 //TODO - create a config and controllers folder and write to them
 //TODO - create a console log that displays where it is listening "https://localhost:${PORT}"
