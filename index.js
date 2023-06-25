@@ -45,6 +45,3 @@ fs.writeFileSync('server.js', skeletonCreation);
 fs.mkdirSync(controllerPath);
 fs.mkdirSync(modelPath);
 fs.mkdir(viewPath);
-
-//TODO - create a config and controllers folder and write to them
-//TODO - create a console log that displays where it is listening "https://localhost:${PORT}"
