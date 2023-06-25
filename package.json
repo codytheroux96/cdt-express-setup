@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/codytheroux96/express-mysql-mvc-setup-package/issues"
   },
-  "homepage": "https://github.com/codytheroux96/express-mysql-mvc-setup-package#readme"
+  "homepage": "https://github.com/codytheroux96/express-mysql-mvc-setup-package#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
 }
