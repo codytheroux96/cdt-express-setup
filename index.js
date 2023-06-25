@@ -48,5 +48,4 @@ fs.mkdir('configs')
 fs.mkdir('controllers')
 
 //TODO - create a config and controllers folder and write to them
-//TODO - write sequelize and express to users package.json
 //TODO - create a console log that displays where it is listening "https://localhost:${PORT}"
