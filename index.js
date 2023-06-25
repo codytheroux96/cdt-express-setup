@@ -41,6 +41,8 @@ sequelize.sync({ force: false }).then(() => {
 }`
 
 fs.writeFileSync('server.js', skeletonCreationFunction);
+fs.mkdir('configs')
+fs.mkdir('controllers')
 
 //TODO - create a config and controllers folder and write to them
 //TODO - write sequelize and express to users package.json
