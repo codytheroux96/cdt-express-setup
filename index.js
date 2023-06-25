@@ -3,9 +3,7 @@ const controllerPath = ('./controllers');
 const modelPath = ('./models');
 const viewPath = ('./views');
 
-const skeletonCreationFunction = `
-function createTemplate(req, res, next)
-{
+const skeletonCreation = `
 console.log('Creating Template')
 const path = require('path');
 const express = require('express');
@@ -38,15 +36,12 @@ app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
-        console.log();
+        console.log(Listening at https://localhost:${PORT});
     })
 })
-next();
+`
 
-module.exports = createTemplate;
-}`
-
-fs.writeFileSync('server.js', skeletonCreationFunction);
+fs.writeFileSync('server.js', skeletonCreation);
 fs.mkdirSync(controllerPath);
 fs.mkdirSync(modelPath);
 fs.mkdir(viewPath);
