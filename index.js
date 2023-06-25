@@ -1,7 +1,7 @@
 import { writeFileSync, mkdirSync, mkdir } from 'fs';
-const controllerPath = ('./controllers');
-const modelPath = ('./models');
-const viewPath = ('./views');
+const controllersPath = ('./controllers');
+const modelsPath = ('./models');
+const viewsPath = ('./views');
 
 const skeletonCreation = `
 console.log('Creating Template')
@@ -42,6 +42,6 @@ sequelize.sync({ force: false }).then(() => {
 `
 
 writeFileSync('server.js', skeletonCreation);
-mkdirSync(controllerPath);
-mkdirSync(modelPath);
-mkdir(viewPath);
+mkdirSync(controllersPath);
+mkdirSync(modelsPath);
+mkdir(viewsPath);
