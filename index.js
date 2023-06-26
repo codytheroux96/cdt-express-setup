@@ -1,15 +1,15 @@
 const fs = require('fs');
-const publicFolder = ('./public');
-const controllersPath = ('./controllers');
-const modelsPath = ('./models');
-const viewsPath = ('./views');
+const publicFolder = ('../public');
+const controllersPath = ('../controllers');
+const modelsPath = ('../models');
+const viewsPath = ('../views');
 
 const skeletonCreation = `
 console.log('Creating Template')
 const path = require('path');
 const express = require('express');
-const sequelize = require('./config')
-const routes = require('./controllers');
+const sequelize = require('../config')
+const routes = require('../controllers');
 
 const PORT = process.env.PORT || 3001;
 
@@ -42,7 +42,7 @@ sequelize.sync({ force: false }).then(() => {
 })
 `
 
-fs.writeFileSync('server.js', skeletonCreation);
+fs.writeFileSync('../server.js', skeletonCreation);
 fs.mkdirSync(publicFolder);
 fs.mkdirSync(controllersPath);
 fs.mkdirSync(modelsPath);
