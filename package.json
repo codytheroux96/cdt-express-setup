@@ -1,11 +1,10 @@
 {
   "name": "cdt-express-setup",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "an npm package for getting started with express sql and mvc",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node addDependency.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
