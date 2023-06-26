@@ -1,3 +1,11 @@
+const fs = require('fs');
+const publicFolder = ('./public');
+const controllersPath = ('./controllers');
+const modelsPath = ('./models');
+const viewsPath = ('./views');
+
+const skeletonCreation = `
+console.log('Creating Template')
 const path = require('path');
 const express = require('express');
 const sequelize = require('./config')
@@ -29,7 +37,13 @@ app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
-        console.log(`Listening at https://localhost:${PORT}`);
+        console.log(Listening at https://localhost:${PORT});
     })
 })
+`
 
+fs.writeFileSync('server.js', skeletonCreation);
+fs.mkdirSync(publicFolder);
+fs.mkdirSync(controllersPath);
+fs.mkdirSync(modelsPath);
+fs.mkdirSync(viewsPath);
