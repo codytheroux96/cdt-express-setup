@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/codytheroux96/express-mysql-mvc-setup-package#readme",
   "dependencies": {
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "express": "4.18.2",
+    "sequelize": "6.32.1"
   }
 }
