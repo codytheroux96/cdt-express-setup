@@ -1,7 +1,7 @@
 const fs = require('fs');
-const publicFolder = ('../public');
-const controllersPath = ('../controllers');
-const modelsPath = ('../models');
+const publicFolder = path.join(__dirname, '../public');
+const controllersPath = path.join(__dirname, '../controllers');
+const modelsPath = path.join(__dirname, '../models');
 const viewsPath = ('../views');
 
 const skeletonCreation = `
