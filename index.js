@@ -1,9 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 const configFolder = path.join(__dirname, '../../config');
-const publicFolder = path.join(__dirname, '../../public');
 const controllersPath = path.join(__dirname, '../../controllers');
+const dbPath = path.join(__dirname, '../../db');
 const modelsPath = path.join(__dirname, '../../models');
+const publicFolder = path.join(__dirname, '../../public');
 const viewsPath = ('../views');
 
 const skeletonCreation = `
@@ -45,7 +46,8 @@ sequelize.sync({ force: false }).then(() => {
 
 fs.writeFileSync('../../server.js', skeletonCreation);
 fs.mkdirSync(configFolder);
-fs.mkdirSync(publicFolder);
 fs.mkdirSync(controllersPath);
+fs.mkdirSync(dbPath);
 fs.mkdirSync(modelsPath);
+fs.mkdirSync(publicFolder);
 fs.mkdirSync(viewsPath);
