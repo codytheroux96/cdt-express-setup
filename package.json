@@ -1,6 +1,6 @@
 {
   "name": "cdt-express-setup",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "an npm package for getting started with express sql and mvc",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "express": "4.18.2",
-    "sequelize": "6.32.1"
+    "sequelize": "6.32.1",
+    "connect-session-sequelize": "7.1.7"
   }
 }
