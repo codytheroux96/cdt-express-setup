@@ -1,14 +1,14 @@
 const fs = require('fs');
-const publicFolder = path.join(__dirname, '../public');
-const controllersPath = path.join(__dirname, '../controllers');
-const modelsPath = path.join(__dirname, '../models');
+const publicFolder = path.join(__dirname, '../../public');
+const controllersPath = path.join(__dirname, '../../controllers');
+const modelsPath = path.join(__dirname, '../../models');
 const viewsPath = ('../views');
 
 const skeletonCreation = `
 const path = require('path');
 const express = require('express');
-const sequelize = require('../config')
-const routes = require('../controllers');
+const sequelize = require('../../config')
+const routes = require('../../controllers');
 
 const PORT = process.env.PORT || 3001;
 
@@ -41,7 +41,7 @@ sequelize.sync({ force: false }).then(() => {
 })
 `
 
-fs.writeFileSync('../server.js', skeletonCreation);
+fs.writeFileSync('../../server.js', skeletonCreation);
 fs.mkdirSync(publicFolder);
 fs.mkdirSync(controllersPath);
 fs.mkdirSync(modelsPath);
