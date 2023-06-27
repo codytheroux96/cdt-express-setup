@@ -1,6 +1,6 @@
 {
   "name": "cdt-express-setup",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "an npm package for getting started with express sql and mvc",
   "main": "index.js",
   "scripts": {
