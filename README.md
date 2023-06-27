@@ -4,7 +4,7 @@
 An npm package that upon installation sets up a skeleton for a project that would be using express, sql, and the MVC format.
 
 ## Installation
-Simply run the command `npm i cdt-express-setup` and let the package install.
+From a blank repo, simply run the command `npm i cdt-express-setup` and let the package install.
 
 ## Usage
 Upon installation the user will receive the following written to their repo:
