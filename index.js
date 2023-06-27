@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const publicFolder = path.join(__dirname, '../../public');
 const controllersPath = path.join(__dirname, '../../controllers');
 const modelsPath = path.join(__dirname, '../../models');
