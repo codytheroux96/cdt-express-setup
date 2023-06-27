@@ -5,7 +5,6 @@ const modelsPath = ('../models');
 const viewsPath = ('../views');
 
 const skeletonCreation = `
-console.log('Creating Template')
 const path = require('path');
 const express = require('express');
 const sequelize = require('../config')
