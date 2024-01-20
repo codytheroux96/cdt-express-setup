@@ -1,7 +1,7 @@
-# express-mysql-mvc-setup-package
+# CDT-Express-Setup
 
 ## Description
-An npm package that upon installation sets up a skeleton for a project that would be using express, sql, and the MVC format.
+An npm package that upon installation sets up a skeleton for a project that would be using express, a SQL database, and the MVC design pattern.
 
 ## Installation
 From a blank repo, simply run the command `npm i cdt-express-setup` and let the package install.
